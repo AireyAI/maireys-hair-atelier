@@ -1,74 +1,63 @@
 :root {
-  /* ====== Atelier Noir — premium-dark, gold-on-near-black ======
-     Anchored to design.md L359 (Apple): product reverence, single accent
-     in a sea of warm neutrals, choreographed rhythm. */
+  /* ====== Maireys — Apple-grade product reverence (design.md L359) ======
+     Binary black / light-gray rhythm, SF Pro, single accent, soft shadows. */
 
-  /* Palette — one unified dark world */
-  --color-bg: #0a0705;            /* near-black: the gallery wall */
-  --color-bg-2: #0e0a07;          /* faint tonal shift for section rhythm */
-  --color-surface: #14110d;       /* card / elevated panel */
-  --color-surface-2: #1c1813;     /* higher elevation */
-  --color-ink: #0a0705;           /* text on gold fills */
+  /* Neutrals — Apple's exact register */
+  --black: #000000;          /* immersive hero / product scenes */
+  --gray: #f5f5f7;           /* alternate light sections (blue-gray, not white) */
+  --white: #ffffff;          /* cards on gray */
+  --ink: #1d1d1f;            /* near-black text on light — warmer than pure black */
+  --ink-soft: rgba(0, 0, 0, 0.64);
+  --ink-dim: rgba(0, 0, 0, 0.44);
+  --line: rgba(0, 0, 0, 0.10);
 
-  --color-text: #f5efe3;          /* warm cream */
-  --color-text-soft: rgba(245, 239, 227, 0.74);
-  --color-text-dim: rgba(245, 239, 227, 0.56);
-  --color-muted: #b8a894;
+  /* On dark */
+  --on-dark: #f5f5f7;
+  --on-dark-soft: rgba(255, 255, 255, 0.72);
+  --on-dark-dim: rgba(255, 255, 255, 0.48);
+  --line-dark: rgba(255, 255, 255, 0.14);
+  --surface-dark: #1d1d1f;   /* cards inside black sections */
+  --surface-dark-2: #2a2a2d;
 
-  /* The single accent: champagne gold (+ a gradient for foil details) */
-  --color-primary: #d4a857;
-  --color-primary-dark: #8f6538;
-  --color-primary-light: #f1d7a6;
-  --gold-1: #f5d6a8;
-  --gold-2: #c89b63;
-  --gold-3: #8f6538;
-  --gold-grad: linear-gradient(135deg, var(--gold-1), var(--gold-2) 52%, var(--gold-3));
+  /* The single accent — refined gold (brand), used like Apple's blue:
+     reserved for interactive elements + price. */
+  --accent: #9a6c22;         /* gold text/links on light (AA on #f5f5f7) */
+  --accent-fill: #c79a4a;    /* gold pill fill */
+  --accent-fill-hover: #d4a957;
+  --accent-on-dark: #e8c583; /* lighter gold on black */
 
-  --color-line: rgba(212, 168, 87, 0.16);     /* gold hairline */
-  --color-line-soft: rgba(245, 239, 227, 0.08);
-  --color-success: #6fb58c;                    /* in-stock, desaturated to fit */
+  /* Type — SF Pro via the system stack (authentic Apple) */
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-  /* Type — Fraunces (display) + Hanken Grotesk (body) */
-  --font-display: "Bodoni Moda", "Didot", "Times New Roman", Georgia, serif;
-  --font-body: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
-
-  --fs-display: clamp(3.4rem, 8.4vw, 7.25rem);
-  --fs-h1: clamp(2.7rem, 6vw, 4.75rem);
-  --fs-h2: clamp(2.1rem, 4.4vw, 3.5rem);
-  --fs-h3: clamp(1.45rem, 2.6vw, 2rem);
-  --fs-h4: 1.25rem;
-  --fs-h5: 1rem;
+  --fs-hero: clamp(2.7rem, 6.4vw, 4.5rem);
+  --fs-h2: clamp(1.95rem, 4vw, 3rem);
+  --fs-h3: clamp(1.4rem, 2.4vw, 1.85rem);
+  --fs-lead: clamp(1.15rem, 1.7vw, 1.45rem);
   --fs-body: 1.0625rem;   /* 17px */
-  --fs-small: 0.875rem;
-  --fs-micro: 0.75rem;
+  --fs-small: 0.875rem;   /* 14px */
+  --fs-micro: 0.75rem;    /* 12px */
 
   /* Spacing — 8px rhythm */
-  --space-1: 0.25rem;
-  --space-2: 0.5rem;
-  --space-3: 0.75rem;
-  --space-4: 1rem;
-  --space-5: 1.25rem;
-  --space-6: 1.5rem;
-  --space-7: 2rem;
-  --space-8: 2.5rem;
-  --space-9: 3rem;
-  --space-10: 4rem;
-  --space-11: 6rem;
-  --space-12: 8rem;
+  --space-1: 0.25rem;  --space-2: 0.5rem;  --space-3: 0.75rem; --space-4: 1rem;
+  --space-5: 1.25rem;  --space-6: 1.5rem;  --space-7: 2rem;    --space-8: 2.5rem;
+  --space-9: 3rem;     --space-10: 4rem;   --space-11: 6rem;   --space-12: 8rem;
 
-  /* Radius */
-  --radius-sm: 0.5rem;
-  --radius-md: 0.875rem;
-  --radius-lg: 1.5rem;
-  --radius-xl: 2rem;
-  --radius-full: 999px;
+  /* Container — Apple's ~980px */
+  --container: 1000px;
+  --container-wide: 1180px;
 
-  /* Elevation — warm black with a faint gold ring */
-  --shadow-sm: 0 1px 0 rgba(255, 248, 237, 0.04) inset, 0 12px 30px rgba(0, 0, 0, 0.45);
-  --shadow-md: 0 1px 0 rgba(255, 248, 237, 0.05) inset, 0 28px 70px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(212, 168, 87, 0.08);
-  --shadow-lg: 0 1px 0 rgba(255, 248, 237, 0.07) inset, 0 60px 130px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(212, 168, 87, 0.14);
-  --shadow-gold: 0 24px 60px rgba(143, 101, 56, 0.28);
+  /* Radius — Apple's scale */
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 18px;
+  --r-xl: 28px;
+  --r-pill: 980px;
+  --r-circle: 50%;
 
-  --ease-out: cubic-bezier(.2, .8, .2, 1);
-  --ease-spring: cubic-bezier(.34, 1.28, .5, 1);
+  /* Elevation — soft, diffused, photographic */
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.08);
+  --shadow-pop: 0 18px 50px rgba(0, 0, 0, 0.14);
+  --shadow-dark: 0 20px 60px rgba(0, 0, 0, 0.5);
+
+  --ease: cubic-bezier(0.28, 0.11, 0.32, 1);
 }

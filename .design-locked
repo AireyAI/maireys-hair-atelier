@@ -1,0 +1,37 @@
+Maireys Hair Market — design lock
+=================================
+Locked: 2026-06-05
+
+Direction: "Atelier Noir" — premium-dark, gold-on-near-black.
+Approved by Kyle 2026-06-05 (picked A "Atelier Noir (dark-gold)" over B "Maison Ivory").
+
+{
+  "system": "premium-dark",
+  "design_md_ref": "Apple — design.md L359 (product reverence, controlled drama, choreographed section rhythm, single accent in a sea of neutrals)",
+  "direction": "Atelier Noir",
+  "approved_by": "Kyle",
+  "approved_on": "2026-06-05"
+}
+
+Brand palette
+  bg        #0A0705  near-black — one unified world (no dark/light flips)
+  surface   #14110D / #1C1813  warm charcoal elevations
+  accent    #D4A857  champagne gold — the SINGLE accent (pink #e45f8c removed)
+  gold-grad #F5D6A8 -> #C89B63 -> #8F6538  (foil hairlines, price, monogram)
+  text      #F5EFE3  warm cream      muted #B8A894
+
+Type: Fraunces (couture optical serif, display) + Hanken Grotesk (refined sans, body).
+  Replaces Codex's Georgia — a generic system serif, the "AI slop" tell flagged by frontend-design.
+
+Signature moves lifted from Apple (lifted, not re-skinned)
+  - product-as-hero on solid near-black fields: the real wig-on-brass-stand shots become
+    warm lit gallery panels against black; the brass stands echo the gold accent
+  - billboard-tight Fraunces headlines (line-height ~1.0, negative tracking)
+  - single gold accent reserved for interactive elements + price
+  - cinematic whitespace, pill CTAs, choreographed (not arbitrary) section rhythm
+
+Fixes over the Codex baseline
+  - hero salon-wash photo (a salon SERVICE — forbidden by client_intake) -> framed real wig
+  - dark<->light section whiplash -> one unified dark atmosphere with tonal variation
+  - cream-on-cream product grid that orphaned the 5th card -> reverent dark grid, centred, no orphan
+  - stray pink accent removed; everything unifies on gold

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Placeholder brand favicon. Replace fill + initials with the client's mark before ship.
+     For a real .ico/.png set, generate from the logo at https://realfavicongenerator.net -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="14" fill="#0B0B0B"/>
+  <text x="50%" y="50%" dy="0.06em" text-anchor="middle" dominant-baseline="middle"
+        font-family="Bebas Neue, Impact, sans-serif" font-size="36" fill="#EC0A7E">YB</text>
+</svg>

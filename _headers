@@ -1,0 +1,10 @@
+# _headers — Cloudflare Pages security headers. Applied to every response.
+# Docs: https://developers.cloudflare.com/pages/configuration/headers/
+/*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), interest-cohort=()
+  X-Frame-Options: SAMEORIGIN
+  # CSP: starts permissive for CDN-loaded Tailwind/GSAP/fonts. Tighten per build.
+  Content-Security-Policy: frame-ancestors 'self'; upgrade-insecure-requests

@@ -5,12 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Maireys Hair Market | Human Hair Wigs Marketplace in Nairobi</title>
   <meta name="description" content="Shop premium human hair wigs from Maireys Hair Market in Nairobi, Kenya. Browse by texture, length, lace type, density, price, and availability. Order on WhatsApp." />
-  <meta name="theme-color" content="#070504" />
+  <meta name="theme-color" content="#0a0705" />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://maireyshair.co.ke/" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="manifest" href="site.webmanifest" />
-  <link rel="preload" as="image" href="assets/hero-hair.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400..600&family=Hanken+Grotesk:wght@300..800&display=swap" />
+  <link rel="preload" as="image" href="assets/wig-black-wave-22.jpg" />
   <link rel="stylesheet" href="tokens.css" />
 
   <meta property="og:type" content="website" />
@@ -58,611 +62,361 @@
     body {
       margin: 0;
       background:
-        radial-gradient(circle at 20% 0%, rgba(200, 155, 99, 0.17), transparent 32rem),
-        radial-gradient(circle at 80% 10%, rgba(228, 95, 140, 0.14), transparent 28rem),
-        linear-gradient(180deg, #070504 0%, #0e0907 48%, #070504 100%);
+        radial-gradient(120% 80% at 50% -12%, rgba(212, 168, 87, 0.12), transparent 60%),
+        radial-gradient(56% 48% at 86% 6%, rgba(143, 101, 56, 0.12), transparent 55%),
+        linear-gradient(180deg, #0a0705 0%, #0c0806 50%, #0a0705 100%);
+      background-attachment: fixed;
       color: var(--color-text);
-      font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+      font-family: var(--font-body);
       font-size: var(--fs-body);
+      font-weight: 360;
       line-height: 1.65;
+      letter-spacing: 0.005em;
       overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
     }
     body::before {
       content: "";
       position: fixed;
       inset: 0;
       pointer-events: none;
-      opacity: 0.14;
-      z-index: -1;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)' opacity='0.65'/%3E%3C/svg%3E");
+      opacity: 0.05;
+      z-index: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E");
     }
     img { display: block; max-width: 100%; height: auto; }
     a { color: inherit; text-decoration: none; }
     button, input, textarea { font: inherit; }
-    :focus-visible { outline: 3px solid var(--color-primary-light); outline-offset: 4px; }
+    ::selection { background: rgba(212, 168, 87, 0.32); color: #fff8ed; }
+    :focus-visible { outline: 2px solid var(--color-primary); outline-offset: 4px; border-radius: 3px; }
+
+    /* Display / heading type — Fraunces, billboard-tight */
+    h1, h2, h3 {
+      margin: 0;
+      font-family: var(--font-display);
+      font-optical-sizing: auto;
+      font-weight: 500;
+      line-height: 1.0;
+      letter-spacing: -0.012em;
+      color: var(--color-text);
+    }
+    h2 { font-size: var(--fs-h2); line-height: 1.02; }
+    h3 { font-size: var(--fs-h3); line-height: 1.08; }
+    p { margin: 0; color: var(--color-text-soft); }
+
     .skip-link {
-      position: fixed;
-      top: 12px;
-      left: 12px;
-      z-index: 10000;
+      position: fixed; top: 12px; left: 12px; z-index: 10000;
       transform: translateY(-150%);
-      background: var(--color-primary-light);
-      color: var(--color-ink);
-      padding: 10px 14px;
-      border-radius: var(--radius-full);
+      background: var(--color-primary); color: var(--color-ink);
+      padding: 10px 16px; border-radius: var(--radius-full); font-weight: 700;
       transition: transform 180ms var(--ease-out);
     }
     .skip-link:focus { transform: translateY(0); }
-    .container { width: min(1160px, calc(100% - 32px)); margin: 0 auto; }
+
+    .container { width: min(1180px, calc(100% - 40px)); margin: 0 auto; position: relative; z-index: 1; }
+
     .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      color: var(--color-primary-light);
-      font-size: 0.76rem;
-      font-weight: 800;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
+      display: inline-flex; align-items: center; gap: 12px;
+      color: var(--color-primary); font-family: var(--font-body);
+      font-size: 0.74rem; font-weight: 700;
+      letter-spacing: 0.22em; text-transform: uppercase;
     }
-    .eyebrow::before {
-      content: "";
-      width: 34px;
-      height: 1px;
-      background: currentColor;
-      opacity: 0.75;
-    }
+    .eyebrow::before { content: ""; width: 30px; height: 1px; background: var(--gold-grad); }
+
+    /* ---------- Header ---------- */
     .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      background: rgba(7, 5, 4, 0.72);
-      border-bottom: 1px solid rgba(245, 214, 168, 0.1);
-      backdrop-filter: blur(18px) saturate(150%);
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(10, 7, 5, 0.62);
+      border-bottom: 1px solid var(--color-line-soft);
+      backdrop-filter: blur(18px) saturate(160%);
+      -webkit-backdrop-filter: blur(18px) saturate(160%);
     }
-    .nav {
-      min-height: 72px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
-    }
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-      min-height: 48px;
-      font-weight: 800;
-      letter-spacing: 0.02em;
-    }
+    .nav { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { display: inline-flex; align-items: center; gap: 13px; min-height: 48px; }
     .brand-mark {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary-dark));
-      color: var(--color-ink);
-      box-shadow: 0 18px 44px rgba(200, 155, 99, 0.22);
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 1.2rem;
+      width: 44px; height: 44px; border-radius: 50%;
+      display: grid; place-items: center;
+      background: var(--gold-grad); color: var(--color-ink);
+      box-shadow: 0 14px 34px rgba(143, 101, 56, 0.4), inset 0 1px 1px rgba(255,255,255,0.5);
+      font-family: var(--font-display); font-weight: 600; font-size: 1.3rem;
     }
-    .brand small { display: block; color: var(--color-muted); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
-    .nav-links { display: flex; align-items: center; gap: 24px; color: rgba(255, 248, 237, 0.78); font-size: 0.92rem; font-weight: 700; }
-    .nav-links a { min-height: 44px; display: inline-flex; align-items: center; transition: color 180ms var(--ease-out), transform 180ms var(--ease-out); }
-    .nav-links a:hover { color: var(--color-primary-light); transform: translateY(-1px); }
+    .brand-name { font-family: var(--font-display); font-weight: 600; font-size: 1.18rem; letter-spacing: 0.01em; line-height: 1; }
+    .brand small { display: block; margin-top: 4px; color: var(--color-muted); font-family: var(--font-body); font-size: 0.62rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; }
+    .nav-links { display: flex; align-items: center; gap: 30px; color: var(--color-text-soft); font-size: 0.92rem; font-weight: 500; }
+    .nav-links a { min-height: 44px; display: inline-flex; align-items: center; transition: color 200ms var(--ease-out); position: relative; }
+    .nav-links > a:not(.btn)::after {
+      content: ""; position: absolute; left: 0; right: 100%; bottom: 8px; height: 1px;
+      background: var(--color-primary); transition: right 240ms var(--ease-out);
+    }
+    .nav-links > a:not(.btn):hover { color: var(--color-text); }
+    .nav-links > a:not(.btn):hover::after { right: 0; }
     .menu-toggle { display: none; }
+
+    /* ---------- Buttons ---------- */
     .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      min-height: 48px;
-      padding: 13px 20px;
-      border-radius: var(--radius-full);
-      font-weight: 800;
-      line-height: 1;
-      border: 1px solid transparent;
-      cursor: pointer;
-      transition: transform 180ms var(--ease-out), opacity 180ms var(--ease-out), border-color 180ms var(--ease-out), background-color 180ms var(--ease-out);
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      min-height: 50px; padding: 14px 26px; border-radius: var(--radius-full);
+      font-family: var(--font-body); font-weight: 700; font-size: 0.95rem; line-height: 1;
+      letter-spacing: 0.01em; border: 1px solid transparent; cursor: pointer;
+      transition: transform 220ms var(--ease-spring), background-color 200ms var(--ease-out), border-color 200ms var(--ease-out), box-shadow 220ms var(--ease-out);
     }
     .btn:hover { transform: translateY(-2px); }
     .btn:active { transform: translateY(0) scale(0.98); }
-    .btn-primary { background: var(--color-primary-light); color: var(--color-ink); box-shadow: 0 18px 50px rgba(200, 155, 99, 0.23); }
-    .btn-primary:hover { background: #ffe2b8; }
-    .btn-secondary { border-color: rgba(255, 248, 237, 0.24); color: var(--color-text); background: rgba(255, 248, 237, 0.04); }
-    .btn-secondary:hover { border-color: var(--color-primary-light); background: rgba(245, 214, 168, 0.08); }
-    .hero {
-      min-height: calc(100dvh - 72px);
-      display: grid;
-      align-items: center;
-      padding: var(--space-10) 0;
-    }
+    .btn-primary { background: var(--gold-grad); color: var(--color-ink); box-shadow: var(--shadow-gold); }
+    .btn-primary:hover { box-shadow: 0 30px 70px rgba(143, 101, 56, 0.42); }
+    .btn-secondary { border-color: var(--color-line); color: var(--color-text); background: rgba(245, 239, 227, 0.03); }
+    .btn-secondary:hover { border-color: var(--color-primary); background: rgba(212, 168, 87, 0.08); }
+    .btn-wa { background: #25d366; color: #04210f; box-shadow: 0 18px 50px rgba(37, 211, 102, 0.26); }
+
+    /* ---------- Hero ---------- */
+    .hero { padding: clamp(48px, 8vw, 104px) 0 clamp(56px, 9vw, 120px); }
     .hero-grid {
       display: grid;
-      grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
-      gap: clamp(28px, 6vw, 76px);
-      align-items: center;
+      grid-template-columns: minmax(0, 1.04fr) minmax(340px, 0.96fr);
+      gap: clamp(32px, 6vw, 84px); align-items: center;
     }
-    h1, h2, h3 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-weight: 700; line-height: 0.98; letter-spacing: 0; }
-    h1 { max-width: 12ch; font-size: var(--fs-h1); margin-top: 20px; }
-    h2 { font-size: var(--fs-h2); max-width: 12ch; }
-    h3 { font-size: var(--fs-h3); line-height: 1.08; }
-    p { margin: 0; color: rgba(255, 248, 237, 0.74); }
-    .hero-copy { max-width: 650px; }
-    .lead { max-width: 640px; margin-top: 24px; font-size: clamp(1.06rem, 2vw, 1.3rem); color: rgba(255, 248, 237, 0.78); }
-    .hero-actions { margin-top: 34px; display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
-    .quick-proof { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+    .hero-copy { max-width: 660px; }
+    h1 {
+      font-family: var(--font-display); font-optical-sizing: auto;
+      font-size: var(--fs-display); font-weight: 460; line-height: 0.96;
+      letter-spacing: -0.02em; margin-top: 22px; max-width: 13ch;
+    }
+    h1 em { font-style: italic; font-weight: 400; color: var(--color-primary-light); }
+    .lead { max-width: 560px; margin-top: 26px; font-size: clamp(1.06rem, 1.6vw, 1.24rem); line-height: 1.62; color: var(--color-text-soft); font-weight: 360; }
+    .hero-actions { margin-top: 36px; display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+    .quick-proof { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; }
     .proof-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 9px;
-      min-height: 40px;
-      padding: 9px 13px;
-      border: 1px solid rgba(245, 214, 168, 0.16);
-      border-radius: var(--radius-full);
-      background: rgba(255, 248, 237, 0.05);
-      color: rgba(255, 248, 237, 0.78);
-      font-size: 0.88rem;
-      font-weight: 700;
+      display: inline-flex; align-items: center; gap: 9px; min-height: 40px;
+      padding: 9px 15px; border: 1px solid var(--color-line); border-radius: var(--radius-full);
+      background: rgba(245, 239, 227, 0.035); color: var(--color-text-soft);
+      font-size: 0.84rem; font-weight: 500;
     }
-    .proof-pill svg { color: var(--color-primary-light); flex: 0 0 auto; }
-    .hero-media {
-      position: relative;
-      min-height: 660px;
-      border-radius: 34px;
+    .proof-pill svg { color: var(--color-primary); flex: 0 0 auto; }
+
+    .hero-media { position: relative; }
+    .hero-media::before {
+      content: ""; position: absolute; inset: -8% -6% -4% -2%; z-index: 0;
+      background: radial-gradient(58% 52% at 60% 38%, rgba(212, 168, 87, 0.34), transparent 70%);
+      filter: blur(20px);
     }
-    .portrait-card {
-      position: absolute;
-      inset: 0 0 72px 54px;
-      overflow: hidden;
-      border-radius: 34px;
-      border: 1px solid rgba(245, 214, 168, 0.16);
-      background: var(--color-surface);
-      box-shadow: var(--shadow-lg);
+    .hero-frame {
+      position: relative; z-index: 1; border-radius: var(--radius-xl); overflow: hidden;
+      border: 1px solid var(--color-line); aspect-ratio: 4 / 5;
+      background: var(--color-surface); box-shadow: var(--shadow-lg);
     }
-    .portrait-card::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, rgba(7,5,4,0.04), rgba(7,5,4,0.7));
+    .hero-frame img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 28%; }
+    .hero-frame::after {
+      content: ""; position: absolute; inset: 0;
+      background: linear-gradient(190deg, rgba(10, 7, 5, 0) 46%, rgba(10, 7, 5, 0.62));
     }
-    .portrait-card img { width: 100%; height: 100%; object-fit: cover; }
-    .stock-card {
-      position: absolute;
-      left: 0;
-      right: 48px;
-      bottom: 0;
-      padding: 18px;
-      border: 1px solid rgba(245, 214, 168, 0.18);
-      border-radius: 24px;
-      background: rgba(18, 16, 14, 0.82);
-      backdrop-filter: blur(18px);
+    .hero-chip {
+      position: absolute; z-index: 2; left: -22px; bottom: 26px;
+      display: grid; grid-template-columns: 56px 1fr; gap: 14px; align-items: center;
+      padding: 14px 18px 14px 14px; max-width: 320px;
+      border: 1px solid var(--color-line); border-radius: var(--radius-lg);
+      background: rgba(20, 17, 13, 0.86); backdrop-filter: blur(16px);
       box-shadow: var(--shadow-md);
-      display: grid;
-      grid-template-columns: 88px 1fr;
-      gap: 16px;
-      align-items: center;
     }
-    .stock-card img { width: 88px; height: 100px; object-fit: cover; border-radius: 16px; }
-    .stock-card strong { display: block; font-size: 1.05rem; }
-    .stock-card span { color: var(--color-muted); font-size: 0.88rem; }
-    .section { padding: var(--space-11) 0; }
-    .section.light {
-      background: #fff8ed;
-      color: var(--color-ink);
-    }
-    .section.light p, .section.light .section-kicker { color: rgba(26, 17, 13, 0.66); }
-    .collection-showcase {
-      position: relative;
-      isolation: isolate;
-      background:
-        linear-gradient(180deg, #fff8ed 0%, #f4e7d6 100%);
-      color: var(--color-ink);
-      overflow: hidden;
-    }
-    .collection-showcase::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      z-index: -1;
-      opacity: 0.52;
-      background:
-        linear-gradient(90deg, rgba(26, 17, 13, 0.05) 1px, transparent 1px),
-        linear-gradient(180deg, rgba(26, 17, 13, 0.04) 1px, transparent 1px);
-      background-size: 44px 44px;
-      mask-image: linear-gradient(180deg, black 0%, transparent 70%);
-    }
-    .collection-showcase .eyebrow { color: #8f6538; }
-    .collection-showcase h2 { color: #1a110d; max-width: 11ch; }
-    .collection-showcase p { color: rgba(26, 17, 13, 0.68); }
-    .section-head {
-      display: flex;
-      justify-content: space-between;
-      align-items: end;
-      gap: 24px;
-      margin-bottom: 34px;
-    }
-    .section-head p { max-width: 560px; }
-    .collection-stats {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 14px;
-      margin: 0 0 34px;
-    }
+    .hero-chip img { width: 56px; height: 66px; border-radius: 12px; object-fit: cover; border: 1px solid var(--color-line); }
+    .hero-chip strong { display: block; font-family: var(--font-display); font-weight: 600; font-size: 1.04rem; color: var(--color-text); }
+    .hero-chip span { display: block; margin-top: 3px; color: var(--color-muted); font-size: 0.78rem; line-height: 1.4; }
+
+    /* ---------- Sections ---------- */
+    .section { padding: clamp(64px, 9vw, 120px) 0; position: relative; }
+    .section + .section { border-top: 1px solid var(--color-line-soft); }
+    .section-head { display: flex; justify-content: space-between; align-items: end; gap: 28px; margin-bottom: 44px; }
+    .section-head p { max-width: 460px; }
+    .section-title { margin-top: 16px; }
+
+    /* Stat strip */
+    .collection-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 0 0 40px; }
     .collection-stat {
-      min-height: 118px;
-      padding: 22px;
-      border: 1px solid rgba(26, 17, 13, 0.1);
-      border-radius: 10px;
-      background:
-        linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(245, 214, 168, 0.34)),
-        #fffaf2;
-      box-shadow: 0 22px 54px rgba(70, 42, 24, 0.09);
+      padding: 26px 24px; border: 1px solid var(--color-line); border-radius: var(--radius-md);
+      background: linear-gradient(160deg, rgba(212, 168, 87, 0.07), rgba(245, 239, 227, 0.015));
     }
     .collection-stat strong {
-      display: block;
-      color: #1a110d;
-      font-size: clamp(1.6rem, 3vw, 2.3rem);
-      line-height: 1;
-      font-weight: 900;
+      display: block; font-family: var(--font-display); font-weight: 500;
+      font-size: clamp(2rem, 3.4vw, 2.9rem); line-height: 1;
+      background: var(--gold-grad); -webkit-background-clip: text; background-clip: text; color: transparent;
     }
-    .collection-stat span {
-      display: block;
-      margin-top: 9px;
-      color: rgba(26, 17, 13, 0.58);
-      font-size: 0.86rem;
-      font-weight: 800;
-    }
-    .collection-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
-      gap: 22px;
-      align-items: stretch;
-    }
+    .collection-stat span { display: block; margin-top: 12px; color: var(--color-muted); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04em; }
+
+    /* Product grid — centered, no orphan */
+    .collection-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; }
     .product-card {
-      overflow: hidden;
-      border: 1px solid rgba(26, 17, 13, 0.12);
-      border-radius: 10px;
-      background: rgba(255, 252, 246, 0.96);
-      box-shadow: 0 26px 70px rgba(70, 42, 24, 0.12);
-      transition: transform 220ms var(--ease-out), border-color 220ms var(--ease-out), box-shadow 220ms var(--ease-out);
+      flex: 1 1 320px; max-width: 364px; overflow: hidden;
+      border: 1px solid var(--color-line); border-radius: var(--radius-lg);
+      background: var(--color-surface);
+      box-shadow: var(--shadow-sm);
+      transition: transform 320ms var(--ease-spring), border-color 320ms var(--ease-out), box-shadow 320ms var(--ease-out);
     }
-    .product-card:hover {
-      transform: translateY(-6px);
-      border-color: rgba(143, 101, 56, 0.32);
-      box-shadow: 0 34px 84px rgba(70, 42, 24, 0.17);
-    }
-    .product-card figure { margin: 0; aspect-ratio: 4 / 5.25; overflow: hidden; background: #eadfce; }
-    .product-card figure img { width: 100%; height: 100%; object-fit: cover; transition: transform 520ms var(--ease-out); }
-    .product-card:hover figure img { transform: scale(1.045); }
-    .product-body { padding: 24px; }
-    .product-top { display: flex; justify-content: space-between; gap: 16px; align-items: start; }
-    .product-card h3 { font-family: Georgia, "Times New Roman", serif; color: #1a110d; font-size: 1.35rem; font-weight: 700; line-height: 1.08; }
-    .price { color: var(--color-primary-light); font-weight: 800; white-space: nowrap; }
+    .product-card:hover { transform: translateY(-8px); border-color: rgba(212, 168, 87, 0.4); box-shadow: var(--shadow-md); }
+    .product-card figure { margin: 0; aspect-ratio: 4 / 5; overflow: hidden; background: #f0e7d8; position: relative; }
+    .product-card figure::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 60%, rgba(10, 7, 5, 0.28)); }
+    .product-card figure img { width: 100%; height: 100%; object-fit: cover; transition: transform 620ms var(--ease-out); }
+    .product-card:hover figure img { transform: scale(1.05); }
+    .product-body { padding: 24px 24px 26px; }
+    .product-top { display: flex; justify-content: space-between; gap: 14px; align-items: start; }
+    .product-card h3 { font-size: 1.42rem; line-height: 1.04; }
     .product-code {
-      display: inline-flex;
-      align-items: center;
-      min-height: 28px;
-      padding: 5px 9px;
-      border-radius: var(--radius-full);
-      background: #1a110d;
-      color: #f5d6a8;
-      font-size: 0.72rem;
-      font-weight: 900;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      white-space: nowrap;
+      display: inline-flex; align-items: center; min-height: 28px; padding: 5px 11px;
+      border-radius: var(--radius-full); border: 1px solid var(--color-line);
+      background: rgba(212, 168, 87, 0.08); color: var(--color-primary-light);
+      font-size: 0.68rem; font-weight: 800; letter-spacing: 0.1em; white-space: nowrap;
     }
-    .product-body p { margin-top: 12px; font-size: 0.94rem; color: rgba(26, 17, 13, 0.64); }
-    .variant-list {
-      display: grid;
-      gap: 9px;
-      margin-top: 18px;
-    }
+    .product-body > p { margin-top: 12px; font-size: 0.92rem; line-height: 1.55; color: var(--color-text-dim); }
+    .variant-list { display: grid; gap: 8px; margin-top: 20px; }
     .variant-row {
-      display: grid;
-      grid-template-columns: 42px 1fr auto;
-      gap: 12px;
-      align-items: center;
-      min-height: 58px;
-      padding: 10px 12px;
-      border: 1px solid rgba(26, 17, 13, 0.09);
-      border-radius: 8px;
-      background: #f6ecdd;
+      display: grid; grid-template-columns: 40px 1fr auto; gap: 13px; align-items: center;
+      min-height: 56px; padding: 9px 14px 9px 9px;
+      border: 1px solid var(--color-line-soft); border-radius: var(--radius-sm);
+      background: rgba(245, 239, 227, 0.028);
     }
-    .variant-thumb {
-      width: 42px;
-      height: 48px;
-      border-radius: 6px;
-      object-fit: cover;
-      background: #fff8ed;
-      border: 1px solid rgba(26, 17, 13, 0.1);
-    }
-    .variant-row strong {
-      display: block;
-      color: #1a110d;
-      font-size: 0.92rem;
-      line-height: 1.2;
-    }
-    .variant-row small {
-      color: rgba(26, 17, 13, 0.48);
-      font-size: 0.73rem;
-      font-weight: 800;
-    }
-    .variant-price {
-      color: #8f6538;
-      font-size: 0.96rem;
-      font-weight: 900;
-      white-space: nowrap;
-    }
+    .variant-thumb { width: 40px; height: 48px; border-radius: 7px; object-fit: cover; border: 1px solid var(--color-line); }
+    .variant-row strong { display: block; color: var(--color-text); font-size: 0.92rem; font-weight: 600; line-height: 1.2; }
+    .variant-row small { color: var(--color-muted); font-size: 0.72rem; font-weight: 600; }
+    .variant-price { font-family: var(--font-display); color: var(--color-primary-light); font-size: 1rem; font-weight: 600; white-space: nowrap; }
+    .tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; align-items: center; }
+    .tag { border-radius: var(--radius-full); padding: 6px 12px; background: rgba(245, 239, 227, 0.05); color: var(--color-text-soft); font-size: 0.72rem; font-weight: 600; }
     .stock-badge {
-      display: inline-flex;
-      align-items: center;
-      min-height: 30px;
-      padding: 6px 10px;
-      border-radius: var(--radius-full);
-      background: rgba(24, 126, 72, 0.1);
-      color: #176f42;
-      font-size: 0.72rem;
-      font-weight: 900;
-      white-space: nowrap;
+      display: inline-flex; align-items: center; gap: 6px; min-height: 28px; padding: 5px 11px; margin-left: auto;
+      border-radius: var(--radius-full); background: rgba(111, 181, 140, 0.12); color: var(--color-success);
+      font-size: 0.7rem; font-weight: 800; letter-spacing: 0.03em; white-space: nowrap;
     }
+    .stock-badge::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--color-success); box-shadow: 0 0 8px var(--color-success); }
     .product-cta {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      min-height: 44px;
-      margin-top: 18px;
-      border-radius: var(--radius-full);
-      border: 1px solid #1a110d;
-      color: #fff8ed;
-      background: #1a110d;
-      font-size: 0.85rem;
-      font-weight: 900;
-      transition: transform 180ms var(--ease-out), border-color 180ms var(--ease-out), background-color 180ms var(--ease-out);
+      display: inline-flex; align-items: center; justify-content: center; gap: 9px; width: 100%;
+      min-height: 46px; margin-top: 22px; border-radius: var(--radius-full);
+      border: 1px solid var(--color-line); color: var(--color-text); background: transparent;
+      font-size: 0.86rem; font-weight: 700; letter-spacing: 0.01em;
+      transition: transform 200ms var(--ease-out), border-color 200ms var(--ease-out), background 280ms var(--ease-out), color 200ms var(--ease-out);
     }
-    .product-cta:hover {
-      transform: translateY(-1px);
-      border-color: #8f6538;
-      background: #8f6538;
-    }
-    .tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
-    .tag {
-      border-radius: var(--radius-full);
-      padding: 6px 10px;
-      background: rgba(26, 17, 13, 0.07);
-      color: rgba(26, 17, 13, 0.68);
-      font-size: 0.76rem;
-      font-weight: 800;
-    }
-    .trust-grid {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 24px;
-      align-items: stretch;
-    }
+    .product-cta svg { color: #25d366; transition: color 200ms var(--ease-out); }
+    .product-cta:hover { transform: translateY(-1px); border-color: transparent; background: var(--gold-grad); color: var(--color-ink); }
+    .product-cta:hover svg { color: var(--color-ink); }
+
+    /* Trust */
+    .trust-grid { display: grid; grid-template-columns: 1.08fr 0.92fr; gap: 24px; align-items: stretch; }
     .trust-panel {
-      border-radius: 30px;
-      padding: clamp(28px, 5vw, 56px);
-      background:
-        linear-gradient(135deg, rgba(245, 214, 168, 0.12), rgba(228, 95, 140, 0.08)),
-        var(--color-surface);
-      border: 1px solid rgba(245, 214, 168, 0.18);
-      box-shadow: var(--shadow-md);
+      border-radius: var(--radius-xl); padding: clamp(30px, 4vw, 52px);
+      background: linear-gradient(150deg, rgba(212, 168, 87, 0.1), rgba(245, 239, 227, 0.02)), var(--color-surface);
+      border: 1px solid var(--color-line); box-shadow: var(--shadow-sm);
     }
-    .check-list { list-style: none; padding: 0; margin: 28px 0 0; display: grid; gap: 16px; }
-    .check-list li { display: grid; grid-template-columns: 28px 1fr; gap: 12px; color: rgba(255, 248, 237, 0.8); }
-    .check-list svg { margin-top: 4px; color: var(--color-primary-light); }
-    .service-list {
-      display: grid;
-      gap: 12px;
-      border-radius: 30px;
-      background: #130f0d;
-      border: 1px solid rgba(245, 214, 168, 0.14);
-      padding: 18px;
-    }
+    .trust-panel .lead { margin-top: 20px; }
+    .check-list { list-style: none; padding: 0; margin: 30px 0 0; display: grid; gap: 18px; }
+    .check-list li { display: grid; grid-template-columns: 26px 1fr; gap: 13px; color: var(--color-text-soft); font-size: 0.98rem; }
+    .check-list svg { margin-top: 3px; color: var(--color-primary); }
+    .service-list { display: grid; gap: 10px; border-radius: var(--radius-xl); background: var(--color-bg-2); border: 1px solid var(--color-line-soft); padding: 16px; }
     .service-row {
-      display: flex;
-      justify-content: space-between;
-      gap: 18px;
-      padding: 18px;
-      border-radius: 18px;
-      background: rgba(255, 248, 237, 0.045);
-      color: rgba(255, 248, 237, 0.82);
+      display: flex; justify-content: space-between; gap: 18px; padding: 18px 20px;
+      border-radius: var(--radius-md); background: rgba(245, 239, 227, 0.028); color: var(--color-text-soft);
+      font-size: 0.95rem;
     }
-    .service-row strong { color: var(--color-text); }
-    .process {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 14px;
-      margin-top: 34px;
-    }
+    .service-row strong { color: var(--color-text); font-weight: 600; }
+
+    /* Process */
+    .process { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
     .step {
-      min-height: 220px;
-      padding: 22px;
-      border-radius: 22px;
-      background: #ffffff;
-      border: 1px solid rgba(26, 17, 13, 0.1);
-      box-shadow: 0 20px 50px rgba(26, 17, 13, 0.08);
+      min-height: 210px; padding: 26px 24px; border-radius: var(--radius-lg);
+      background: var(--color-surface); border: 1px solid var(--color-line-soft);
+      transition: transform 300ms var(--ease-spring), border-color 300ms var(--ease-out);
     }
+    .step:hover { transform: translateY(-6px); border-color: var(--color-line); }
     .step span {
-      display: inline-grid;
-      place-items: center;
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      background: #1a110d;
-      color: #fff8ed;
-      font-weight: 900;
+      display: inline-grid; place-items: center; width: 46px; height: 46px; border-radius: 50%;
+      background: rgba(212, 168, 87, 0.1); border: 1px solid var(--color-line);
+      color: var(--color-primary-light); font-family: var(--font-display); font-weight: 600; font-size: 1.15rem;
       margin-bottom: 22px;
     }
-    .step h3 { font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif; font-size: 1.05rem; font-weight: 900; line-height: 1.2; }
-    .step p { margin-top: 12px; }
-    .quote-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
-    }
+    .step h3 { font-size: 1.18rem; }
+    .step p { margin-top: 12px; font-size: 0.94rem; color: var(--color-text-dim); }
+
+    /* Testimonials */
+    .quote-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
     blockquote {
-      margin: 0;
-      padding: 26px;
-      min-height: 280px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      border-radius: 24px;
-      background: rgba(255, 248, 237, 0.052);
-      border: 1px solid rgba(245, 214, 168, 0.14);
-      box-shadow: var(--shadow-sm);
+      margin: 0; padding: 30px 28px; min-height: 250px; display: flex; flex-direction: column; justify-content: space-between;
+      border-radius: var(--radius-lg); background: var(--color-surface); border: 1px solid var(--color-line-soft); box-shadow: var(--shadow-sm);
+      position: relative;
     }
-    blockquote p { color: rgba(255, 248, 237, 0.82); font-size: 1.04rem; }
-    blockquote cite { color: var(--color-primary-light); font-style: normal; font-weight: 900; }
-    .faq-wrap {
-      display: grid;
-      grid-template-columns: 0.8fr 1.2fr;
-      gap: 40px;
-      align-items: start;
-    }
-    details {
-      border-bottom: 1px solid rgba(245, 214, 168, 0.16);
-      padding: 20px 0;
-    }
-    summary {
-      cursor: pointer;
-      min-height: 44px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-      font-weight: 900;
-      color: var(--color-text);
-    }
+    blockquote::before { content: "\201C"; font-family: var(--font-display); font-size: 4rem; line-height: 0.6; color: var(--color-primary); opacity: 0.5; }
+    blockquote p { color: var(--color-text-soft); font-size: 1.04rem; line-height: 1.55; margin-top: 8px; }
+    blockquote cite { color: var(--color-primary-light); font-style: normal; font-weight: 700; font-size: 0.9rem; }
+
+    /* FAQ */
+    .faq-wrap { display: grid; grid-template-columns: 0.82fr 1.18fr; gap: 48px; align-items: start; }
+    details { border-bottom: 1px solid var(--color-line-soft); padding: 22px 0; }
+    summary { cursor: pointer; min-height: 44px; display: flex; align-items: center; justify-content: space-between; gap: 20px; font-weight: 600; font-size: 1.05rem; color: var(--color-text); list-style: none; }
     summary::-webkit-details-marker { display: none; }
-    summary::after { content: "+"; color: var(--color-primary-light); font-size: 1.5rem; }
-    details[open] summary::after { content: "-"; }
-    details p { padding: 4px 42px 0 0; }
+    summary::after { content: "+"; color: var(--color-primary); font-family: var(--font-display); font-size: 1.6rem; transition: transform 240ms var(--ease-out); }
+    details[open] summary::after { content: "\2013"; }
+    details p { padding: 14px 42px 0 0; color: var(--color-text-dim); }
+
+    /* CTA band */
     .cta-band {
-      border-radius: 34px;
-      padding: clamp(34px, 6vw, 70px);
+      border-radius: var(--radius-xl); padding: clamp(40px, 6vw, 76px);
       background:
-        linear-gradient(135deg, rgba(255, 248, 237, 0.96), rgba(245, 214, 168, 0.86)),
-        #fff8ed;
-      color: var(--color-ink);
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 24px;
-      align-items: center;
-      box-shadow: 0 34px 90px rgba(200, 155, 99, 0.18);
+        radial-gradient(120% 140% at 8% 0%, rgba(212, 168, 87, 0.2), transparent 56%),
+        linear-gradient(135deg, #1c1813, #100c09);
+      border: 1px solid var(--color-line);
+      display: grid; grid-template-columns: 1fr auto; gap: 28px; align-items: center;
+      box-shadow: var(--shadow-md);
     }
-    .cta-band p { color: rgba(26, 17, 13, 0.68); max-width: 620px; }
-    .cta-band .btn-primary { background: #1a110d; color: #fff8ed; }
-    .site-footer {
-      padding: 40px 0;
-      border-top: 1px solid rgba(245, 214, 168, 0.12);
-      color: rgba(255, 248, 237, 0.68);
-    }
+    .cta-band h2 { margin-top: 14px; }
+    .cta-band p { color: var(--color-text-soft); max-width: 540px; margin-top: 16px; }
+
+    /* Footer */
+    .site-footer { padding: 48px 0; border-top: 1px solid var(--color-line-soft); color: var(--color-text-dim); }
     .footer-grid { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; align-items: center; }
-    .footer-links { display: flex; gap: 18px; flex-wrap: wrap; }
-    .footer-links a, .footer-links button {
-      border: 0;
-      background: transparent;
-      color: rgba(255, 248, 237, 0.72);
-      padding: 8px 0;
-      cursor: pointer;
-      transition: color 180ms var(--ease-out);
-    }
-    .footer-links a:hover, .footer-links button:hover { color: var(--color-primary-light); }
+    .footer-grid strong { font-family: var(--font-display); font-weight: 600; color: var(--color-text); font-size: 1.05rem; }
+    .footer-links { display: flex; gap: 22px; flex-wrap: wrap; }
+    .footer-links a, .footer-links button { border: 0; background: transparent; color: var(--color-text-dim); padding: 8px 0; cursor: pointer; font-size: 0.9rem; transition: color 200ms var(--ease-out); }
+    .footer-links a:hover, .footer-links button:hover { color: var(--color-primary); }
+
+    /* WhatsApp float */
     .whatsapp-float {
-      position: fixed;
-      right: 18px;
-      bottom: 18px;
-      z-index: 60;
-      width: 58px;
-      height: 58px;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      background: #25d366;
-      color: #061009;
-      box-shadow: 0 20px 60px rgba(37, 211, 102, 0.3);
-      transition: transform 180ms var(--ease-out), opacity 180ms var(--ease-out);
+      position: fixed; right: 20px; bottom: 20px; z-index: 60; width: 58px; height: 58px;
+      border-radius: 50%; display: grid; place-items: center; background: #25d366; color: #04210f;
+      box-shadow: 0 18px 50px rgba(37, 211, 102, 0.34); transition: transform 220ms var(--ease-spring);
     }
-    .whatsapp-float:hover { transform: translateY(-3px) scale(1.03); }
+    .whatsapp-float::after { content: ""; position: absolute; inset: 0; border-radius: 50%; box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); animation: wa-pulse 2.6s var(--ease-out) infinite; }
+    @keyframes wa-pulse { 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.45); } 70%, 100% { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); } }
+    .whatsapp-float:hover { transform: translateY(-3px) scale(1.05); }
+
     @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
-        animation-duration: 0.001ms !important;
-        animation-iteration-count: 1 !important;
-        scroll-behavior: auto !important;
-        transition-duration: 0.001ms !important;
-      }
+      *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: 0.001ms !important; }
+      body { background-attachment: scroll; }
     }
-    @media (max-width: 940px) {
+    @media (max-width: 960px) {
       .hero-grid, .trust-grid, .faq-wrap, .cta-band { grid-template-columns: 1fr; }
-      .hero-media { min-height: 560px; }
-      .portrait-card { inset: 0 0 72px 20px; }
-      .collection-stats { grid-template-columns: 1fr 1fr 1fr; }
-      .collection-grid { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+      .hero-media { max-width: 520px; margin-inline: auto; }
       .quote-grid { grid-template-columns: 1fr 1fr; }
       .process { grid-template-columns: 1fr 1fr; }
-      .section-head { align-items: start; flex-direction: column; }
+      .section-head { flex-direction: column; align-items: start; }
+      .cta-band { justify-items: start; }
       .nav-links {
-        position: fixed;
-        inset: 72px 16px auto 16px;
-        display: none;
-        flex-direction: column;
-        align-items: stretch;
-        padding: 18px;
-        border-radius: 20px;
-        background: rgba(18, 16, 14, 0.96);
-        border: 1px solid rgba(245, 214, 168, 0.18);
-        box-shadow: var(--shadow-lg);
+        position: fixed; inset: 76px 16px auto 16px; display: none; flex-direction: column; align-items: stretch;
+        padding: 18px; border-radius: var(--radius-lg); background: rgba(20, 17, 13, 0.97);
+        border: 1px solid var(--color-line); box-shadow: var(--shadow-lg);
       }
       .nav-links.open { display: flex; }
       .nav-links a, .nav-links .btn { justify-content: center; }
       .menu-toggle {
-        display: inline-grid;
-        place-items: center;
-        width: 48px;
-        height: 48px;
-        border-radius: 50%;
-        border: 1px solid rgba(255, 248, 237, 0.18);
-        background: rgba(255, 248, 237, 0.04);
-        color: var(--color-text);
-        cursor: pointer;
+        display: inline-grid; place-items: center; width: 48px; height: 48px; border-radius: 50%;
+        border: 1px solid var(--color-line); background: rgba(245, 239, 227, 0.04); color: var(--color-text); cursor: pointer;
       }
     }
-    @media (max-width: 640px) {
-      .container { width: min(100% - 24px, 1160px); }
-      .hero { padding: var(--space-8) 0; min-height: auto; }
-      h1 { font-size: clamp(2.7rem, 13.5vw, 4rem); }
-      .lead { font-size: 1rem; }
+    @media (max-width: 620px) {
+      .container { width: min(100% - 28px, 1180px); }
+      .hero { padding: 32px 0 48px; }
+      h1 { font-size: clamp(2.9rem, 14vw, 4rem); }
       .hero-actions .btn { width: 100%; }
-      .hero-media { min-height: 480px; }
-      .portrait-card { inset: 0 0 86px 0; border-radius: 24px; }
-      .stock-card { right: 0; grid-template-columns: 72px 1fr; }
-      .stock-card img { width: 72px; height: 84px; }
-      .collection-stats, .collection-grid, .quote-grid, .process { grid-template-columns: 1fr; }
-      .product-body { padding: 22px; }
-      .product-card figure { aspect-ratio: 4 / 4.5; }
-      .variant-row { grid-template-columns: 48px 1fr; }
-      .variant-price { grid-column: 2; }
-      .variant-thumb { width: 48px; height: 54px; }
-      .collection-stats {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 8px;
-        margin-bottom: 22px;
-      }
-      .collection-stat {
-        min-height: 88px;
-        padding: 13px 10px;
-        border-radius: 8px;
-      }
-      .collection-stat strong { font-size: clamp(1.3rem, 7vw, 1.8rem); }
-      .collection-stat span { font-size: 0.68rem; line-height: 1.2; }
-      .section { padding: var(--space-10) 0; }
+      .hero-chip { left: 12px; right: 12px; max-width: none; }
+      .collection-stats { grid-template-columns: repeat(3, 1fr); gap: 9px; }
+      .collection-stat { padding: 16px 12px; }
+      .collection-stat span { font-size: 0.66rem; }
+      .product-card { flex-basis: 100%; max-width: 440px; }
+      .quote-grid, .process { grid-template-columns: 1fr; }
       .service-row { flex-direction: column; gap: 6px; }
-      .whatsapp-float { width: 54px; height: 54px; }
     }
   </style>
 </head>
@@ -671,9 +425,9 @@
 
   <header class="site-header">
     <div class="container nav">
-      <a class="brand" href="#top">
+      <a class="brand" href="#top" aria-label="Maireys Hair Market home">
         <span class="brand-mark" aria-hidden="true">M</span>
-        <span>Maireys Hair <small>Market Nairobi</small></span>
+        <span class="brand-name">Maireys Hair<small>Market &middot; Nairobi</small></span>
       </a>
       <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
@@ -692,109 +446,109 @@
     <section class="hero" id="top">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <span class="eyebrow" data-appear>Premium human hair in Nairobi</span>
-          <h1 data-split="words">Human hair wigs, ready to order.</h1>
-          <p class="lead" data-appear data-appear-delay="0.15">A Nairobi marketplace for premium human hair wigs. Compare texture, length, density, lace type, price, and availability before you order on WhatsApp.</p>
+          <span class="eyebrow" data-appear>Premium human hair &middot; Nairobi</span>
+          <h1 data-split="words">Human hair wigs, <em>ready to order.</em></h1>
+          <p class="lead" data-appear data-appear-delay="0.15">A Nairobi marketplace for premium human hair wigs. Compare texture, length, density, lace type, price, and availability &mdash; then order on WhatsApp.</p>
           <div class="hero-actions" data-appear data-appear-delay="0.25">
-            <a class="btn btn-primary" data-magnetic href="#collection">Shop available wigs</a>
-            <a class="btn btn-secondary" data-magnetic href="#collection">View collection</a>
+            <a class="btn btn-primary" data-magnetic href="#collection">Shop the collection</a>
+            <a class="btn btn-secondary" data-magnetic href="#process">How it works</a>
           </div>
           <div class="quick-proof" aria-label="Maireys promises">
             <span class="proof-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="m20 6-11 11-5-5" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>Product codes</span>
-            <span class="proof-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 3v18M3 12h18" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/></svg>Stock confirmed</span>
+            <span class="proof-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="m20 6-11 11-5-5" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>Stock confirmed</span>
             <span class="proof-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 7h11v10H4zM15 10h3l2 3v4h-5zM7 19a2 2 0 1 0 0-4 2 2 0 0 0 0 4ZM17 19a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>Kenya delivery</span>
           </div>
         </div>
-        <div class="hero-media" data-parallax="-70">
-          <div class="portrait-card">
-            <img src="assets/hero-hair.jpg" width="900" height="1200" fetchpriority="high" alt="Woman with glossy styled hair wearing a premium human hair look" />
+        <div class="hero-media" data-parallax="-60">
+          <div class="hero-frame">
+            <img src="assets/wig-black-wave-22.jpg" width="900" height="1125" fetchpriority="high" alt="Premium black wave human hair wig on a studio stand" />
           </div>
-          <div class="stock-card" data-appear data-appear-delay="0.35">
-            <img src="assets/salon-care.jpg" width="180" height="220" alt="Human hair wig product detail" />
-            <p><strong>15 wigs listed now</strong><span>Prices are live from KSh 45,000 to KSh 60,000, with each length shown on the card.</span></p>
+          <div class="hero-chip" data-appear data-appear-delay="0.4">
+            <img src="assets/wig-honey-blonde-20.jpg" width="56" height="66" alt="Honey blonde human hair wig" />
+            <p><strong>15 wigs in stock</strong><span>Live prices KSh 45,000&ndash;60,000, each length on the card.</span></p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section collection-showcase" id="collection" data-reveal="fade-up">
+    <section class="section" id="collection" data-reveal="fade-up">
       <div class="container">
         <div class="section-head">
           <div>
             <span class="eyebrow">Shop the edit</span>
-            <h2>Available wigs.</h2>
+            <h2 class="section-title">The collection.</h2>
           </div>
-          <p>Real inventory from the current Numbers sheet. Compare colour, texture, length, price, and quantity before sending the product code on WhatsApp.</p>
+          <p>Real inventory from the current stock sheet. Compare colour, texture, length, price, and quantity, then send the product code on WhatsApp.</p>
         </div>
         <div class="collection-stats" aria-label="Current inventory summary">
-          <div class="collection-stat"><strong>15</strong><span>wigs currently listed</span></div>
-          <div class="collection-stat"><strong>5</strong><span>colour and texture styles</span></div>
-          <div class="collection-stat"><strong>KSh 45k-60k</strong><span>selling price range</span></div>
+          <div class="collection-stat"><strong data-counter="15">15</strong><span>wigs currently listed</span></div>
+          <div class="collection-stat"><strong data-counter="5">5</strong><span>colour &amp; texture styles</span></div>
+          <div class="collection-stat"><strong>KSh 45&ndash;60k</strong><span>selling price range</span></div>
         </div>
         <div class="collection-grid" data-stagger-parent>
           <article class="product-card" data-stagger-child data-tilt>
-            <figure><img src="assets/wig-blonde-straight-22.jpg" width="307" height="512" loading="lazy" alt="Blonde straight human hair wig, 22 inch" /></figure>
+            <figure><img src="assets/wig-blonde-straight-22.jpg" width="307" height="384" loading="lazy" alt="Blonde straight human hair wig, 22 inch" /></figure>
             <div class="product-body">
-              <div class="product-top"><h3>Blonde Straight Wig</h3><span class="product-code">MH-BS</span></div>
-              <p>Sleek blonde straight human hair wig, available in longer everyday lengths.</p>
+              <div class="product-top"><h3>Blonde Straight</h3><span class="product-code">MH-BS</span></div>
+              <p>Sleek blonde straight human hair, in longer everyday lengths.</p>
               <div class="variant-list">
-                <div class="variant-row"><img class="variant-thumb" src="assets/wig-blonde-straight-20.jpg" width="42" height="48" loading="lazy" alt="Blonde straight wig, 20 inch" /><div><strong>20 inch</strong><small>2 available</small></div><span class="variant-price">KSh 55,000</span></div>
-                <div class="variant-row"><img class="variant-thumb" src="assets/wig-blonde-straight-22.jpg" width="42" height="48" loading="lazy" alt="Blonde straight wig, 22 inch" /><div><strong>22 inch</strong><small>1 available</small></div><span class="variant-price">KSh 60,000</span></div>
+                <div class="variant-row"><img class="variant-thumb" src="assets/wig-blonde-straight-20.jpg" width="40" height="48" loading="lazy" alt="Blonde straight wig, 20 inch" /><div><strong>20 inch</strong><small>2 available</small></div><span class="variant-price">KSh 55,000</span></div>
+                <div class="variant-row"><img class="variant-thumb" src="assets/wig-blonde-straight-22.jpg" width="40" height="48" loading="lazy" alt="Blonde straight wig, 22 inch" /><div><strong>22 inch</strong><small>1 available</small></div><span class="variant-price">KSh 60,000</span></div>
               </div>
               <div class="tag-row"><span class="tag">Straight</span><span class="tag">Blonde</span><span class="stock-badge">In stock</span></div>
-              <a class="product-cta" href="https://wa.me/254717427704?text=Hi%20Maireys%20Hair%20Market%2C%20I%20want%20to%20confirm%20availability%20for%20MH-BS%20Blonde%20Straight%20Wig." target="_blank" rel="noopener">Ask for MH-BS</a>
+              <a class="product-cta" href="https://wa.me/254717427704?text=Hi%20Maireys%20Hair%20Market%2C%20I%20want%20to%20confirm%20availability%20for%20MH-BS%20Blonde%20Straight%20Wig." target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.2 20.2 5.5 16A8.3 8.3 0 1 1 9 19.2l-4.8 1Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Ask for MH-BS</a>
             </div>
           </article>
           <article class="product-card" data-stagger-child data-tilt>
-            <figure><img src="assets/wig-black-wave-22.jpg" width="307" height="512" loading="lazy" alt="Black wave human hair wig, 22 inch" /></figure>
+            <figure><img src="assets/wig-black-wave-22.jpg" width="307" height="384" loading="lazy" alt="Black wave human hair wig, 22 inch" /></figure>
             <div class="product-body">
-              <div class="product-top"><h3>Black Wave Wig</h3><span class="product-code">MH-BW</span></div>
-              <p>Soft black wave human hair wig for movement, volume, and an easy styled finish.</p>
+              <div class="product-top"><h3>Black Wave</h3><span class="product-code">MH-BW</span></div>
+              <p>Soft black waves for movement, volume, and an easy styled finish.</p>
               <div class="variant-list">
-                <div class="variant-row"><img class="variant-thumb" src="assets/wig-black-wave-20.jpg" width="42" height="48" loading="lazy" alt="Black wave wig, 20 inch" /><div><strong>20 inch</strong><small>1 available</small></div><span class="variant-price">KSh 55,000</span></div>
-                <div class="variant-row"><img class="variant-thumb" src="assets/wig-black-wave-22.jpg" width="42" height="48" loading="lazy" alt="Black wave wig, 22 inch" /><div><strong>22 inch</strong><small>2 available</small></div><span class="variant-price">KSh 60,000</span></div>
+                <div class="variant-row"><img class="variant-thumb" src="assets/wig-black-wave-20.jpg" width="40" height="48" loading="lazy" alt="Black wave wig, 20 inch" /><div><strong>20 inch</strong><small>1 available</small></div><span class="variant-price">KSh 55,000</span></div>
+                <div class="variant-row"><img class="variant-thumb" src="assets/wig-black-wave-22.jpg" width="40" height="48" loading="lazy" alt="Black wave wig, 22 inch" /><div><strong>22 inch</strong><small>2 available</small></div><span class="variant-price">KSh 60,000</span></div>
               </div>
               <div class="tag-row"><span class="tag">Wave</span><span class="tag">Black</span><span class="stock-badge">In stock</span></div>
-              <a class="product-cta" href="https://wa.me/254717427704?text=Hi%20Maireys%20Hair%20Market%2C%20I%20want%20to%20confirm%20availability%20for%20MH-BW%20Black%20Wave%20Wig." target="_blank" rel="noopener">Ask for MH-BW</a>
+              <a class="product-cta" href="https://wa.me/254717427704?text=Hi%20Maireys%20Hair%20Market%2C%20I%20want%20to%20confirm%20availability%20for%20MH-BW%20Black%20Wave%20Wig." target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.2 20.2 5.5 16A8.3 8.3 0 1 1 9 19.2l-4.8 1Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Ask for MH-BW</a>
             </div>
           </article>
           <article class="product-card" data-stagger-child data-tilt>
-            <figure><img src="assets/wig-black-straight-20.jpg" width="307" height="512" loading="lazy" alt="Black straight human hair wig, 20 inch" /></figure>
+            <figure><img src="assets/wig-black-straight-20.jpg" width="307" height="384" loading="lazy" alt="Black straight human hair wig, 20 inch" /></figure>
             <div class="product-body">
-              <div class="product-top"><h3>Black Straight Wig</h3><span class="product-code">MH-BKS</span></div>
-              <p>Classic black straight human hair wig, with a shorter option and a polished 20 inch length.</p>
+              <div class="product-top"><h3>Black Straight</h3><span class="product-code">MH-BKS</span></div>
+              <p>Classic black straight human hair, with a shorter option and a polished 20 inch.</p>
               <div class="variant-list">
-                <div class="variant-row"><img class="variant-thumb" src="assets/wig-black-straight-16.jpg" width="42" height="48" loading="lazy" alt="Black straight wig, 16 inch" /><div><strong>16 inch</strong><small>2 available</small></div><span class="variant-price">KSh 45,000</span></div>
-                <div class="variant-row"><img class="variant-thumb" src="assets/wig-black-straight-20.jpg" width="42" height="48" loading="lazy" alt="Black straight wig, 20 inch" /><div><strong>20 inch</strong><small>2 available</small></div><span class="variant-price">KSh 55,000</span></div>
+                <div class="variant-row"><img class="variant-thumb" src="assets/wig-black-straight-16.jpg" width="40" height="48" loading="lazy" alt="Black straight wig, 16 inch" /><div><strong>16 inch</strong><small>2 available</small></div><span class="variant-price">KSh 45,000</span></div>
+                <div class="variant-row"><img class="variant-thumb" src="assets/wig-black-straight-20.jpg" width="40" height="48" loading="lazy" alt="Black straight wig, 20 inch" /><div><strong>20 inch</strong><small>2 available</small></div><span class="variant-price">KSh 55,000</span></div>
               </div>
               <div class="tag-row"><span class="tag">Straight</span><span class="tag">Black</span><span class="stock-badge">In stock</span></div>
-              <a class="product-cta" href="https://wa.me/254717427704?text=Hi%20Maireys%20Hair%20Market%2C%20I%20want%20to%20confirm%20availability%20for%20MH-BKS%20Black%20Straight%20Wig." target="_blank" rel="noopener">Ask for MH-BKS</a>
+              <a class="product-cta" href="https://wa.me/254717427704?text=Hi%20Maireys%20Hair%20Market%2C%20I%20want%20to%20confirm%20availability%20for%20MH-BKS%20Black%20Straight%20Wig." target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.2 20.2 5.5 16A8.3 8.3 0 1 1 9 19.2l-4.8 1Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Ask for MH-BKS</a>
             </div>
           </article>
           <article class="product-card" data-stagger-child data-tilt>
-            <figure><img src="assets/wig-burgundy-22.jpg" width="308" height="512" loading="lazy" alt="Burgundy human hair wig, 22 inch" /></figure>
+            <figure><img src="assets/wig-burgundy-22.jpg" width="308" height="385" loading="lazy" alt="Burgundy human hair wig, 22 inch" /></figure>
             <div class="product-body">
-              <div class="product-top"><h3>Burgundy Wig</h3><span class="product-code">MH-BG</span></div>
-              <p>Rich burgundy human hair wig for a warmer colour statement while keeping the finish premium.</p>
+              <div class="product-top"><h3>Burgundy</h3><span class="product-code">MH-BG</span></div>
+              <p>Rich burgundy human hair for a warmer colour statement, premium finish.</p>
               <div class="variant-list">
-                <div class="variant-row"><img class="variant-thumb" src="assets/wig-burgundy-20.jpg" width="42" height="48" loading="lazy" alt="Burgundy wig, 20 inch" /><div><strong>20 inch</strong><small>1 available</small></div><span class="variant-price">KSh 55,000</span></div>
-                <div class="variant-row"><img class="variant-thumb" src="assets/wig-burgundy-22.jpg" width="42" height="48" loading="lazy" alt="Burgundy wig, 22 inch" /><div><strong>22 inch</strong><small>1 available</small></div><span class="variant-price">KSh 60,000</span></div>
+                <div class="variant-row"><img class="variant-thumb" src="assets/wig-burgundy-20.jpg" width="40" height="48" loading="lazy" alt="Burgundy wig, 20 inch" /><div><strong>20 inch</strong><small>1 available</small></div><span class="variant-price">KSh 55,000</span></div>
+                <div class="variant-row"><img class="variant-thumb" src="assets/wig-burgundy-22.jpg" width="40" height="48" loading="lazy" alt="Burgundy wig, 22 inch" /><div><strong>22 inch</strong><small>1 available</small></div><span class="variant-price">KSh 60,000</span></div>
               </div>
               <div class="tag-row"><span class="tag">Burgundy</span><span class="tag">Human hair</span><span class="stock-badge">In stock</span></div>
-              <a class="product-cta" href="https://wa.me/254717427704?text=Hi%20Maireys%20Hair%20Market%2C%20I%20want%20to%20confirm%20availability%20for%20MH-BG%20Burgundy%20Wig." target="_blank" rel="noopener">Ask for MH-BG</a>
+              <a class="product-cta" href="https://wa.me/254717427704?text=Hi%20Maireys%20Hair%20Market%2C%20I%20want%20to%20confirm%20availability%20for%20MH-BG%20Burgundy%20Wig." target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.2 20.2 5.5 16A8.3 8.3 0 1 1 9 19.2l-4.8 1Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Ask for MH-BG</a>
             </div>
           </article>
           <article class="product-card" data-stagger-child data-tilt>
-            <figure><img src="assets/wig-honey-blonde-22.jpg" width="307" height="512" loading="lazy" alt="Honey blonde human hair wig, 22 inch" /></figure>
+            <figure><img src="assets/wig-honey-blonde-22.jpg" width="307" height="384" loading="lazy" alt="Honey blonde human hair wig, 22 inch" /></figure>
             <div class="product-body">
-              <div class="product-top"><h3>Honey Blonde Wig</h3><span class="product-code">MH-HB</span></div>
-              <p>Warm honey blonde human hair wig, with the 20 inch option priced lower than the longer length.</p>
+              <div class="product-top"><h3>Honey Blonde</h3><span class="product-code">MH-HB</span></div>
+              <p>Warm honey blonde human hair, with the 20 inch priced below the longer length.</p>
               <div class="variant-list">
-                <div class="variant-row"><img class="variant-thumb" src="assets/wig-honey-blonde-20.jpg" width="42" height="48" loading="lazy" alt="Honey blonde wig, 20 inch" /><div><strong>20 inch</strong><small>2 available</small></div><span class="variant-price">KSh 50,000</span></div>
-                <div class="variant-row"><img class="variant-thumb" src="assets/wig-honey-blonde-22.jpg" width="42" height="48" loading="lazy" alt="Honey blonde wig, 22 inch" /><div><strong>22 inch</strong><small>1 available</small></div><span class="variant-price">KSh 60,000</span></div>
+                <div class="variant-row"><img class="variant-thumb" src="assets/wig-honey-blonde-20.jpg" width="40" height="48" loading="lazy" alt="Honey blonde wig, 20 inch" /><div><strong>20 inch</strong><small>2 available</small></div><span class="variant-price">KSh 50,000</span></div>
+                <div class="variant-row"><img class="variant-thumb" src="assets/wig-honey-blonde-22.jpg" width="40" height="48" loading="lazy" alt="Honey blonde wig, 22 inch" /><div><strong>22 inch</strong><small>1 available</small></div><span class="variant-price">KSh 60,000</span></div>
               </div>
               <div class="tag-row"><span class="tag">Honey blonde</span><span class="tag">Human hair</span><span class="stock-badge">In stock</span></div>
-              <a class="product-cta" href="https://wa.me/254717427704?text=Hi%20Maireys%20Hair%20Market%2C%20I%20want%20to%20confirm%20availability%20for%20MH-HB%20Honey%20Blonde%20Wig." target="_blank" rel="noopener">Ask for MH-HB</a>
+              <a class="product-cta" href="https://wa.me/254717427704?text=Hi%20Maireys%20Hair%20Market%2C%20I%20want%20to%20confirm%20availability%20for%20MH-HB%20Honey%20Blonde%20Wig." target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.2 20.2 5.5 16A8.3 8.3 0 1 1 9 19.2l-4.8 1Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Ask for MH-HB</a>
             </div>
           </article>
         </div>
@@ -805,7 +559,7 @@
       <div class="container trust-grid">
         <div class="trust-panel">
           <span class="eyebrow">Marketplace trust</span>
-          <h2>Buyers need clear stock, not vague promises.</h2>
+          <h2 class="section-title">Clear stock, not vague promises.</h2>
           <p class="lead">Maireys keeps each wig simple to compare: product code, colour, texture, length, price, and current quantity.</p>
           <ul class="check-list">
             <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="m20 6-11 11-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Each product can be ordered by code, reducing WhatsApp back-and-forth.</span></li>
@@ -823,18 +577,18 @@
       </div>
     </section>
 
-    <section class="section light" id="process" data-reveal="fade-up">
+    <section class="section" id="process" data-reveal="fade-up">
       <div class="container">
         <div class="section-head">
           <div>
             <span class="eyebrow">Order flow</span>
-            <h2>Four steps from browse to delivery.</h2>
+            <h2 class="section-title">Four steps from browse to delivery.</h2>
           </div>
           <p>The process is built around product codes and WhatsApp confirmation.</p>
         </div>
         <div class="process" data-stagger-parent>
           <article class="step" data-stagger-child><span>1</span><h3>Browse wigs</h3><p>Compare product code, colour, texture, length, price, and current quantity.</p></article>
-          <article class="step" data-stagger-child><span>2</span><h3>Send product code</h3><p>Tap WhatsApp and send the exact wig code or screenshot of the product card.</p></article>
+          <article class="step" data-stagger-child><span>2</span><h3>Send product code</h3><p>Tap WhatsApp and send the exact wig code or a screenshot of the product card.</p></article>
           <article class="step" data-stagger-child><span>3</span><h3>Confirm stock</h3><p>Maireys confirms availability, final price, payment details, and delivery location.</p></article>
           <article class="step" data-stagger-child><span>4</span><h3>Receive order</h3><p>Collect in Nairobi or receive courier delivery anywhere in Kenya.</p></article>
         </div>
@@ -846,14 +600,14 @@
         <div class="section-head">
           <div>
             <span class="eyebrow">Client proof</span>
-            <h2>Built for confidence.</h2>
+            <h2 class="section-title">Built for confidence.</h2>
           </div>
-          <p>Draft marketplace testimonials are included for layout and tone. Replace with approved real buyer quotes before launch.</p>
+          <p>Draft marketplace testimonials shown for layout and tone. Replace with approved real buyer quotes before launch.</p>
         </div>
         <div class="quote-grid">
-          <blockquote><p>"I liked that every wig had a clear code and price. I sent the screenshot and got confirmation quickly."</p><cite>Achieng, Kilimani</cite></blockquote>
-          <blockquote><p>"The stock details made it easier to choose. I knew the length, texture, and delivery cost before paying."</p><cite>Wanjiku, Westlands</cite></blockquote>
-          <blockquote><p>"Ordering by WhatsApp was simple. I asked for the wig code, paid, and received it in Nairobi."</p><cite>Njeri, Nairobi CBD</cite></blockquote>
+          <blockquote><p>I liked that every wig had a clear code and price. I sent the screenshot and got confirmation quickly.</p><cite>Achieng, Kilimani</cite></blockquote>
+          <blockquote><p>The stock details made it easier to choose. I knew the length, texture, and delivery cost before paying.</p><cite>Wanjiku, Westlands</cite></blockquote>
+          <blockquote><p>Ordering by WhatsApp was simple. I asked for the wig code, paid, and received it in Nairobi.</p><cite>Njeri, Nairobi CBD</cite></blockquote>
         </div>
       </div>
     </section>
@@ -862,11 +616,11 @@
       <div class="container faq-wrap">
         <div>
           <span class="eyebrow">FAQ</span>
-          <h2>Before you order.</h2>
-          <p class="lead">These are the questions wig buyers need answered before placing an order.</p>
+          <h2 class="section-title">Before you order.</h2>
+          <p class="lead">The questions wig buyers need answered before placing an order.</p>
         </div>
         <div>
-          <details open><summary>Are the prices on the website current?</summary><p>Yes, the listed inventory prices now match the supplied Numbers sheet: KSh 45,000, 50,000, 55,000, or 60,000 depending on wig style and length.</p></details>
+          <details open><summary>Are the prices on the website current?</summary><p>Yes. The listed inventory prices match the supplied stock sheet: KSh 45,000, 50,000, 55,000, or 60,000 depending on wig style and length.</p></details>
           <details><summary>How do I order?</summary><p>Send the product code or screenshot on WhatsApp. Maireys confirms stock, final price, payment details, and delivery options.</p></details>
           <details><summary>Do you deliver outside Nairobi?</summary><p>Yes. Courier delivery is available across Kenya after availability and payment are confirmed.</p></details>
           <details><summary>Can I reserve a wig?</summary><p>Reservation terms depend on the product and current demand. Confirm by WhatsApp using the product code.</p></details>
@@ -883,7 +637,10 @@
             <h2>Send the wig code on WhatsApp.</h2>
             <p>Ask for availability, delivery cost, and final payment details on +254 717 427 704. Clear product codes make ordering faster.</p>
           </div>
-          <a class="btn btn-primary" data-magnetic href="https://wa.me/254717427704?text=Hi%20Maireys%20Hair%20Market%2C%20I%20want%20to%20confirm%20availability%20for%20a%20wig." target="_blank" rel="noopener">WhatsApp Maireys</a>
+          <a class="btn btn-wa" data-magnetic href="https://wa.me/254717427704?text=Hi%20Maireys%20Hair%20Market%2C%20I%20want%20to%20confirm%20availability%20for%20a%20wig." target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.2 20.2 5.5 16A8.3 8.3 0 1 1 9 19.2l-4.8 1Z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="M9.2 8.5c.2-.4.4-.5.7-.5h.5c.2 0 .4.1.5.4l.7 1.6c.1.3 0 .5-.2.7l-.4.5c.6 1.1 1.5 2 2.6 2.6l.5-.4c.2-.2.5-.2.7-.1l1.6.8c.3.1.4.3.4.6v.4c0 .4-.2.7-.6.8-.6.3-1.6.2-2.9-.4-1.2-.5-2.4-1.4-3.4-2.4-1-1-1.8-2.1-2.3-3.2-.5-1.2-.5-2.2-.2-2.9Z" fill="currentColor"/></svg>
+            WhatsApp Maireys
+          </a>
         </div>
       </div>
     </section>
@@ -893,7 +650,7 @@
     <div class="container footer-grid">
       <div>
         <strong>Maireys Hair Market</strong><br />
-        Nairobi, Kenya · WhatsApp +254 717 427 704
+        Nairobi, Kenya &middot; WhatsApp +254 717 427 704
       </div>
       <div class="footer-links">
         <a href="privacy.html">Privacy</a>

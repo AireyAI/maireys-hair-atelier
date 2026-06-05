@@ -1,22 +1,48 @@
 :root {
-  --color-primary: #c89b63;
+  /* ====== Atelier Noir — premium-dark, gold-on-near-black ======
+     Anchored to design.md L359 (Apple): product reverence, single accent
+     in a sea of warm neutrals, choreographed rhythm. */
+
+  /* Palette — one unified dark world */
+  --color-bg: #0a0705;            /* near-black: the gallery wall */
+  --color-bg-2: #0e0a07;          /* faint tonal shift for section rhythm */
+  --color-surface: #14110d;       /* card / elevated panel */
+  --color-surface-2: #1c1813;     /* higher elevation */
+  --color-ink: #0a0705;           /* text on gold fills */
+
+  --color-text: #f5efe3;          /* warm cream */
+  --color-text-soft: rgba(245, 239, 227, 0.74);
+  --color-text-dim: rgba(245, 239, 227, 0.56);
+  --color-muted: #b8a894;
+
+  /* The single accent: champagne gold (+ a gradient for foil details) */
+  --color-primary: #d4a857;
   --color-primary-dark: #8f6538;
-  --color-primary-light: #f5d6a8;
-  --color-accent: #e45f8c;
-  --color-bg: #070504;
-  --color-surface: #12100e;
-  --color-surface-2: #1d1713;
-  --color-text: #fff8ed;
-  --color-muted: #bda995;
-  --color-line: rgba(245, 214, 168, 0.18);
-  --color-ink: #1a110d;
-  --fs-h1: clamp(3rem, 7vw, 6rem);
-  --fs-h2: clamp(2.4rem, 5vw, 4.6rem);
-  --fs-h3: clamp(1.6rem, 3vw, 2.5rem);
-  --fs-h4: 1.3rem;
+  --color-primary-light: #f1d7a6;
+  --gold-1: #f5d6a8;
+  --gold-2: #c89b63;
+  --gold-3: #8f6538;
+  --gold-grad: linear-gradient(135deg, var(--gold-1), var(--gold-2) 52%, var(--gold-3));
+
+  --color-line: rgba(212, 168, 87, 0.16);     /* gold hairline */
+  --color-line-soft: rgba(245, 239, 227, 0.08);
+  --color-success: #6fb58c;                    /* in-stock, desaturated to fit */
+
+  /* Type — Fraunces (display) + Hanken Grotesk (body) */
+  --font-display: "Fraunces", "Times New Roman", Georgia, serif;
+  --font-body: "Hanken Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+
+  --fs-display: clamp(3.4rem, 8.4vw, 7.25rem);
+  --fs-h1: clamp(2.7rem, 6vw, 4.75rem);
+  --fs-h2: clamp(2.1rem, 4.4vw, 3.5rem);
+  --fs-h3: clamp(1.45rem, 2.6vw, 2rem);
+  --fs-h4: 1.25rem;
   --fs-h5: 1rem;
-  --fs-body: 1rem;
+  --fs-body: 1.0625rem;   /* 17px */
   --fs-small: 0.875rem;
+  --fs-micro: 0.75rem;
+
+  /* Spacing — 8px rhythm */
   --space-1: 0.25rem;
   --space-2: 0.5rem;
   --space-3: 0.75rem;
@@ -29,12 +55,20 @@
   --space-10: 4rem;
   --space-11: 6rem;
   --space-12: 8rem;
+
+  /* Radius */
   --radius-sm: 0.5rem;
   --radius-md: 0.875rem;
   --radius-lg: 1.5rem;
+  --radius-xl: 2rem;
   --radius-full: 999px;
-  --shadow-sm: 0 1px 0 rgba(255, 255, 255, 0.05) inset, 0 10px 30px rgba(0, 0, 0, 0.22);
-  --shadow-md: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 24px 70px rgba(0, 0, 0, 0.34), 0 0 0 1px rgba(245, 214, 168, 0.08);
-  --shadow-lg: 0 1px 0 rgba(255, 255, 255, 0.08) inset, 0 50px 120px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(245, 214, 168, 0.14);
+
+  /* Elevation — warm black with a faint gold ring */
+  --shadow-sm: 0 1px 0 rgba(255, 248, 237, 0.04) inset, 0 12px 30px rgba(0, 0, 0, 0.45);
+  --shadow-md: 0 1px 0 rgba(255, 248, 237, 0.05) inset, 0 28px 70px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(212, 168, 87, 0.08);
+  --shadow-lg: 0 1px 0 rgba(255, 248, 237, 0.07) inset, 0 60px 130px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(212, 168, 87, 0.14);
+  --shadow-gold: 0 24px 60px rgba(143, 101, 56, 0.28);
+
   --ease-out: cubic-bezier(.2, .8, .2, 1);
+  --ease-spring: cubic-bezier(.34, 1.28, .5, 1);
 }

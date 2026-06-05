@@ -1,7 +1,7 @@
 {
-  "name": "new-client-template",
+  "name": "maireys-hair-atelier",
   "version": "1.0.0",
-  "description": "REP with Robson — sports massage, coaching and recovery site for Jord Robson, Carlisle.",
+  "description": "Modern professional marketplace website for Maireys Hair Market in Nairobi, Kenya.",
   "type": "module",
   "scripts": {
     "serve": "node serve.mjs",

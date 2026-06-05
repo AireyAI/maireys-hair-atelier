@@ -1,8 +1,4 @@
-# robots.txt — replace yourdomain.co.uk with the live domain before ship
 User-agent: *
 Allow: /
 
-# Block admin moderation tooling from indexing
-Disallow: /admin/
-
-Sitemap: https://yourdomain.co.uk/sitemap.xml
+Sitemap: https://maireyshair.co.ke/sitemap.xml

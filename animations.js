@@ -1,5 +1,5 @@
 /**
- * AireyAI Animation Toolkit
+ * Animation Toolkit
  * Drop-in premium motion for any website.
  *
  * Includes: scroll reveals, parallax, text splitting, magnetic buttons,
@@ -100,8 +100,8 @@
         });
       } else if (mode === 'words') {
         el.innerHTML = text.split(' ').map(w =>
-          `<span style="display:inline-block; margin-right:0.25em">${w}</span>`
-        ).join('');
+          `<span style="display:inline-block">${w}</span>`
+        ).join(' ');
         gsap.from(el.querySelectorAll('span'), {
           y: '100%',
           opacity: 0,

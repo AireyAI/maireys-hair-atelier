@@ -1,67 +1,76 @@
-# Client Intake — [CLIENT NAME]
+# Maireys Hair Market — Client Intake
 
-Real content. No lorem. Client signs off before build starts.
+## Status
+
+Corrected after Kyle clarified the business is a marketplace for selling human hair wigs only. No treatment, installation, fitting, or salon-service language should appear on the public site.
+
+Inventory has been wired from Kyle's Numbers screenshot supplied on 5 June 2026. Current public collection should show five grouped wig styles, 10 length options, and 15 total units.
+
+AI-generated preview photos were added on 5 June 2026 for every length option. Treat these as website mock product visuals until Maireys supplies real stock photos.
 
 ## Brand
-- **Business name:**
-- **What they do (one sentence, their words):**
-- **Who it's for:**
-- **Tone:** (premium / friendly-trade / sharp-tech / playful / etc.)
-- **Logo:** (path in `brand_assets/` or "needs design")
-- **Brand colors:** (hex codes, primary + 1-2 accents)
-- **Fonts:** (display + body, or "Claude picks")
+
+- Working name: Maireys Hair Market
+- Original name: Maireys Human Hair
+- Business type: Nairobi-based human hair wig marketplace.
+- Positioning: a clean, trustworthy product marketplace for clients comparing human hair wigs by texture, length, density, lace type, price, and availability.
+- Tone: premium, direct, inventory-led, WhatsApp commerce.
+- Service area: Nairobi, with Kenya-wide delivery.
 
 ## Hero
-- **Headline (client's words):**
-- **Subheadline (one sentence — who + outcome):**
-- **Primary CTA text:**
-- **CTA destination:** (contact form / WhatsApp / Calendly URL / etc.)
 
-## Welcome video — REQUIRED? **Y / N**
-If **Y**: see `welcome_video_brief.md`, generate via Sora 2, save to `brand_assets/videos/welcome.mp4`. Wire into hero as muted autoplay loop.
-If **N**: skip — use a Nano Banana hero still or Fal.ai LTX background loop instead.
+- Headline: Human hair wigs, ready to order.
+- Subheadline: Browse premium human hair wigs in Nairobi by texture, length, lace type, density, and price. Send the product code on WhatsApp to confirm availability and delivery.
+- Primary CTA: Shop available wigs
+- Secondary CTA: Send inventory request
 
-## Value props (3, specific not generic)
-1.
-2.
-3.
+## Value Props
 
-## Services / products
-| Name | Price (or "from £X") | One-line description |
-|---|---|---|
-|  |  |  |
+1. Clear product cards with price, length, texture, density, and availability.
+2. WhatsApp ordering using product codes, so buyers can ask fast and avoid confusion.
+3. Nairobi pickup or Kenya-wide delivery after availability is confirmed.
 
-## Testimonials (3, real names + roles, with permission)
-1. "…" — Name, Role
-2.
-3.
+## Inventory Structure
 
-## Team
-| Name | Role | One-sentence bio | Headshot (path or "Nano Banana") |
-|---|---|---|---|
-|  |  |  |  |
+Current Numbers inventory fields:
 
-## FAQ (5-8 actual questions, client's answers)
-- **Q:**
-  **A:**
+- Product code
+- Product name
+- Texture
+- Length
+- Colour
+- Price
+- Availability
+- Photo URL or image file
+- Notes
+
+## Current Inventory
+
+| Product code | Wig | Lengths and prices | Quantity |
+| --- | --- | --- | --- |
+| MH-BS | Blonde Straight Wig | 20 inch: KSh 55,000; 22 inch: KSh 60,000 | 3 total |
+| MH-BW | Black Wave Wig | 20 inch: KSh 55,000; 22 inch: KSh 60,000 | 3 total |
+| MH-BKS | Black Straight Wig | 16 inch: KSh 45,000; 20 inch: KSh 55,000 | 4 total |
+| MH-BG | Burgundy Wig | 20 inch: KSh 55,000; 22 inch: KSh 60,000 | 2 total |
+| MH-HB | Honey Blonde Wig | 20 inch: KSh 50,000; 22 inch: KSh 60,000 | 3 total |
+
+## Draft Product Categories
+
+- Lace front wigs
+- Closure wigs
+- Glueless wigs
+- Bob wigs
+- Curly wigs
+- Straight wigs
+- Kinky straight wigs
+- Premium longer lengths
 
 ## Contact
-- **Phone:**
-- **Email:**
-- **WhatsApp number:** (with country code)
-- **Address:**
-- **Hours:**
-- **Service area:**
 
-## Assets supplied
-- [ ] Logo (vector)
-- [ ] Real job/product photos in `brand_assets/photos/`
-- [ ] Premises photos
-- [ ] Existing brand guide / style doc
-- [ ] Welcome video footage (if not generating via Sora)
+- WhatsApp: +254 717 427 704
+- Email: hello@maireyshair.co.ke (draft; replace before launch)
+- Location: Nairobi, Kenya
 
-## Client sign-off
-- [ ] Client has reviewed all copy above
-- [ ] Client approved 1 of 2 design directions (Stripe vs Linear, etc.)
-- [ ] Client confirmed CTA destination is live
-- [ ] OK to build
+## Visual Direction
+
+Chosen direction: premium marketplace, dark commerce styling, high-contrast product cards, fast WhatsApp ordering, minimal service copy.

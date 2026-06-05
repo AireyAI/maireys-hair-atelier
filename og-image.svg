@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="g1" cx="20%" cy="8%" r="80%">
+      <stop offset="0" stop-color="#c89b63" stop-opacity=".46"/>
+      <stop offset=".42" stop-color="#12100e"/>
+      <stop offset="1" stop-color="#070504"/>
+    </radialGradient>
+    <linearGradient id="hair" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff8ed"/>
+      <stop offset=".45" stop-color="#f5d6a8"/>
+      <stop offset="1" stop-color="#e45f8c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g1)"/>
+  <circle cx="950" cy="180" r="260" fill="#e45f8c" opacity=".12"/>
+  <path d="M775 130c105 10 177 82 177 178 0 113-86 190-210 190-76 0-151-31-197-83 53 22 116 24 167 7 77-26 123-91 116-163-6-63-47-111-103-139 17-3 34-3 50 0z" fill="url(#hair)" opacity=".9"/>
+  <text x="80" y="170" fill="#f5d6a8" font-family="Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="8">NAIROBI HUMAN HAIR ATELIER</text>
+  <text x="76" y="300" fill="#fff8ed" font-family="Georgia, serif" font-size="94">Maireys</text>
+  <text x="82" y="392" fill="#fff8ed" font-family="Georgia, serif" font-size="86">Hair Market</text>
+  <text x="84" y="472" fill="#bda995" font-family="Arial, sans-serif" font-size="32">Human Hair Wigs · Nairobi · Kenya Delivery</text>
+  <rect x="84" y="520" width="258" height="58" rx="29" fill="#f5d6a8"/>
+  <text x="116" y="558" fill="#1a110d" font-family="Arial, sans-serif" font-size="24" font-weight="800">Order on WhatsApp</text>
+</svg>

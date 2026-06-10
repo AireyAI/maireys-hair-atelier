@@ -1,37 +1,43 @@
 Maireys Hair Market — design lock
 =================================
-Locked: 2026-06-05
+Locked: 2026-06-06 (supersedes 2026-06-05 Atelier Noir lock and the 2026-06-06 Apple build)
 
-Direction: "Atelier Noir" — premium-dark, gold-on-near-black.
-Approved by Kyle 2026-06-05 (picked A "Atelier Noir (dark-gold)" over B "Maison Ivory").
+Direction: "Maison Noir" — faithful Bugatti, re-flavoured for haute-couture hair.
+Approved by Kyle 2026-06-06 ("use one of the 68 designs and make it the most
+beautiful human hair wig website possible" — exemplar choice delegated to Claude).
 
 {
   "system": "premium-dark",
-  "design_md_ref": "Apple — design.md L359 (product reverence, controlled drama, choreographed section rhythm, single accent in a sea of neutrals)",
-  "direction": "Atelier Noir",
+  "design_md_ref": "Bugatti — design.md L1215 (cinema-black canvas, monumental single-weight display, mono-caps dossier UI, white-outline pills, no cards — full-bleed film chapters; the chrome never competes with the product)",
+  "direction": "Maison Noir (Bugatti-faithful)",
   "approved_by": "Kyle",
-  "approved_on": "2026-06-05"
+  "approved_on": "2026-06-06"
 }
 
-Brand palette
-  bg        #0A0705  near-black — one unified world (no dark/light flips)
-  surface   #14110D / #1C1813  warm charcoal elevations
-  accent    #D4A857  champagne gold — the SINGLE accent (pink #e45f8c removed)
-  gold-grad #F5D6A8 -> #C89B63 -> #8F6538  (foil hairlines, price, monogram)
-  text      #F5EFE3  warm cream      muted #B8A894
+Palette (Bugatti monochrome austerity)
+  canvas    #000000  pure velvet black — the display stand
+  chrome    #ffffff  all text, borders, CTAs
+  tertiary  #999999  hairlines, dimmed metadata — the only gray
+  ACCENT: none on chrome. The only colour = the product (hair catching golden
+  light in the photography) + the gold logo mark (the one jewel).
 
-Type: Fraunces (couture optical serif, display) + Hanken Grotesk (refined sans, body).
-  Replaces Codex's Georgia — a generic system serif, the "AI slop" tell flagged by frontend-design.
+Type (entry's substitute guidance, re-flavoured for beauty)
+  Display  Cinzel        — Roman-caps couture register, weight 400 ONLY, ALL CAPS,
+                           line-height ~1.05, desktop display capped ~8rem
+                           (entry: cap substitutes at 104–128px; 200px+ single-word only)
+  Mono UI  Space Mono    — EVERY label/CTA/eyebrow/caption, UPPERCASE, 1.2–1.4px tracking
+  Body     DM Sans       — invisible reading text (entry-named substitute)
+  No bold anywhere — hierarchy through SCALE, not weight (Bugatti doctrine).
 
-Signature moves lifted from Apple (lifted, not re-skinned)
-  - product-as-hero on solid near-black fields: the real wig-on-brass-stand shots become
-    warm lit gallery panels against black; the brass stands echo the gold accent
-  - billboard-tight Fraunces headlines (line-height ~1.0, negative tracking)
-  - single gold accent reserved for interactive elements + price
-  - cinematic whitespace, pill CTAs, choreographed (not arbitrary) section rhythm
+Signature moves lifted
+  - full-viewport cinematic hero (generated film still: hair as gold-on-black lacquer)
+  - bottom-up rgba(0,0,0,.4) vignette = the ONLY shadow-like effect
+  - white-outline 9999px pill CTAs, mono-caps labels
+  - no cards: collection = borderless gallery prints + mono captions (film-caption style)
+  - spec DOSSIER table + numbered 01–04 PROTOCOL rows (telemetry register)
+  - WhatsApp float keeps green (functional recognition); all in-flow CTAs monochrome
 
-Fixes over the Codex baseline
-  - hero salon-wash photo (a salon SERVICE — forbidden by client_intake) -> framed real wig
-  - dark<->light section whiplash -> one unified dark atmosphere with tonal variation
-  - cream-on-cream product grid that orphaned the 5th card -> reverent dark grid, centred, no orphan
-  - stray pink accent removed; everything unifies on gold
+Imagery
+  - hero-film.jpg + craft-macro.jpg generated via Higgsfield soul_2 (~0.12cr each),
+    consistent with client_intake's existing AI-mock-visuals-until-real-photos policy
+  - 5 mannequin catalog shots retained as gallery prints in the collection

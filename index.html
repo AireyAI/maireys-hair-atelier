@@ -14,7 +14,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400&family=Space+Mono:wght@400&family=DM+Sans:opsz,wght@9..40,400&display=swap" />
-  <link rel="preload" as="image" href="assets/hero-film.jpg" fetchpriority="high" />
+  <link rel="preload" as="image" href="assets/hero-film-mobile.jpg" media="(max-width: 620px)" fetchpriority="high" />
+  <link rel="preload" as="image" href="assets/hero-film.jpg" media="(min-width: 621px)" fetchpriority="high" />
   <link rel="stylesheet" href="tokens.css" />
 
   <meta property="og:type" content="website" />
@@ -270,8 +271,16 @@
       .gallery { gap: 48px; }
       .chapter-actions .btn { width: 100%; }
       .chapter-caption { display: none; }
-      .hero-meta { padding-right: 72px; }
+      .hero-meta { padding-right: 72px; gap: 6px 18px; }
       .footer-grid { flex-direction: column; gap: 18px; }
+      /* Hero: steer the crop to the model's face (she sits at the far left of the
+         landscape still) so phones see a subject, not abstract hair. */
+      #top .chapter-media img.bg { object-position: 44% 40%; }
+      #top .chapter-media { min-height: 100svh; }
+      #top .chapter-copy { padding-bottom: clamp(28px, 5vh, 56px); }
+      .hero-copy h1 { font-size: clamp(3.4rem, 17vw, 5rem); }
+      .hero-copy .lead { font-size: 1.06rem; max-width: 34ch; }
+      .chapter-actions { margin-top: 24px; gap: 12px; }
     }
   </style>
 </head>
@@ -303,7 +312,10 @@
     <!-- CHAPTER I — THE FILM -->
     <section class="chapter" id="top">
       <div class="chapter-media">
-        <img class="bg" src="assets/hero-film.jpg" width="1920" height="1080" fetchpriority="high" alt="Flowing black human hair catching golden light against a black studio backdrop" />
+        <picture>
+          <source media="(max-width: 620px)" srcset="assets/hero-film-mobile.jpg" />
+          <img class="bg" src="assets/hero-film.jpg" width="1920" height="1080" fetchpriority="high" alt="A model in profile, gold rim-light tracing her face, with long glossy black human hair" />
+        </picture>
         <div class="container chapter-copy hero-copy">
           <span class="eyebrow" data-appear>Human Hair Atelier &mdash; Nairobi</span>
           <h1 data-appear data-appear-delay="0.08">Maireys</h1>

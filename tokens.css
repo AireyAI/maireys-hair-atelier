@@ -1,63 +1,50 @@
 :root {
-  /* ====== Maireys — Apple-grade product reverence (design.md L359) ======
-     Binary black / light-gray rhythm, SF Pro, single accent, soft shadows. */
+  /* ====== Maison Noir — faithful Bugatti (design.md L1215) ======
+     Cinema-black canvas. Monochrome chrome. The product is the only colour. */
 
-  /* Neutrals — Apple's exact register */
-  --black: #000000;          /* immersive hero / product scenes */
-  --gray: #f5f5f7;           /* alternate light sections (blue-gray, not white) */
-  --white: #ffffff;          /* cards on gray */
-  --ink: #1d1d1f;            /* near-black text on light — warmer than pure black */
-  --ink-soft: rgba(0, 0, 0, 0.64);
-  --ink-dim: rgba(0, 0, 0, 0.44);
-  --line: rgba(0, 0, 0, 0.10);
+  /* Palette — Bugatti's exact austerity */
+  --black: #000000;            /* the entire canvas — pure, not near-black */
+  --white: #ffffff;            /* all text, borders, CTAs */
+  --mist: #999999;             /* the single gray: hairlines, tertiary, dimmed */
+  --white-72: rgba(255, 255, 255, 0.72);
+  --hairline: rgba(255, 255, 255, 0.18);
+  --hairline-dim: rgba(153, 153, 153, 0.35);
 
-  /* On dark */
-  --on-dark: #f5f5f7;
-  --on-dark-soft: rgba(255, 255, 255, 0.72);
-  --on-dark-dim: rgba(255, 255, 255, 0.48);
-  --line-dark: rgba(255, 255, 255, 0.14);
-  --surface-dark: #1d1d1f;   /* cards inside black sections */
-  --surface-dark-2: #2a2a2d;
+  /* The one jewel — gold lives ONLY in the logo mark */
+  --gold-1: #f3d9a8;
+  --gold-2: #cd9f4f;
+  --gold-3: #9a6c22;
 
-  /* The single accent — refined gold (brand), used like Apple's blue:
-     reserved for interactive elements + price. */
-  --accent: #9a6c22;         /* gold text/links on light (AA on #f5f5f7) */
-  --accent-fill: #c79a4a;    /* gold pill fill */
-  --accent-fill-hover: #d4a957;
-  --accent-on-dark: #e8c583; /* lighter gold on black */
+  /* Type — entry-named substitutes, beauty register */
+  --font-display: "Cinzel", "Times New Roman", serif;       /* sculpture, 400 only, CAPS */
+  --font-mono: "Space Mono", ui-monospace, "SFMono-Regular", Menlo, monospace; /* all UI labels */
+  --font-text: "DM Sans", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; /* invisible body */
 
-  /* Type — SF Pro via the system stack (authentic Apple) */
-  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* Scale — hierarchy through size, never weight */
+  --fs-monument: clamp(3.2rem, 12.5vw, 10.5rem);  /* single-word moments only */
+  --fs-display: clamp(2.2rem, 5.2vw, 3.75rem);    /* 60px feature register */
+  --fs-section: clamp(1.6rem, 3vw, 2.25rem);      /* 36px section register */
+  --fs-lead: 1.25rem;                              /* 20px lead body */
+  --fs-body: 1rem;                                 /* 16px body */
+  --fs-compact: 0.875rem;                          /* 14px dense body / mono UI */
+  --fs-micro: 0.75rem;                             /* 12px mono micro */
 
-  --fs-hero: clamp(2.7rem, 6.4vw, 4.5rem);
-  --fs-h2: clamp(1.95rem, 4vw, 3rem);
-  --fs-h3: clamp(1.4rem, 2.4vw, 1.85rem);
-  --fs-lead: clamp(1.15rem, 1.7vw, 1.45rem);
-  --fs-body: 1.0625rem;   /* 17px */
-  --fs-small: 0.875rem;   /* 14px */
-  --fs-micro: 0.75rem;    /* 12px */
+  --track-mono: 0.0875em;   /* ~1.4px at 16px — mono-caps register */
+  --track-mono-sm: 0.1em;
 
-  /* Spacing — 8px rhythm */
+  /* Spacing — cinematic breathing */
   --space-1: 0.25rem;  --space-2: 0.5rem;  --space-3: 0.75rem; --space-4: 1rem;
   --space-5: 1.25rem;  --space-6: 1.5rem;  --space-7: 2rem;    --space-8: 2.5rem;
   --space-9: 3rem;     --space-10: 4rem;   --space-11: 6rem;   --space-12: 8rem;
 
-  /* Container — Apple's ~980px */
-  --container: 1000px;
-  --container-wide: 1180px;
+  --container: 1240px;
 
-  /* Radius — Apple's scale */
-  --r-sm: 8px;
-  --r-md: 12px;
-  --r-lg: 18px;
-  --r-xl: 28px;
-  --r-pill: 980px;
-  --r-circle: 50%;
+  /* Radius — pills + the rare 6px; media is square */
+  --r-pill: 9999px;
+  --r-rare: 6px;
 
-  /* Elevation — soft, diffused, photographic */
-  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.08);
-  --shadow-pop: 0 18px 50px rgba(0, 0, 0, 0.14);
-  --shadow-dark: 0 20px 60px rgba(0, 0, 0, 0.5);
+  /* The only "shadow": the bottom-up vignette (applied per-element) */
+  --vignette: linear-gradient(0deg, rgba(0,0,0,0.62) 0%, rgba(0,0,0,0.28) 32%, rgba(0,0,0,0) 62%);
 
-  --ease: cubic-bezier(0.28, 0.11, 0.32, 1);
+  --ease: cubic-bezier(0.33, 0, 0.2, 1);  /* quiet, never bouncy */
 }
